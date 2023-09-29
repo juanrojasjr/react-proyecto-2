@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import SocialMedia from "../menus/SocialMedia"
+import GlobalMenu from "../menus/GlobalMenu";
 
 export default () => {
     return (
@@ -27,7 +28,9 @@ export default () => {
                     </Col>
                 </Row>
                 <Row className="border-top border-secondary">
-                    <Col xs={12}></Col>
+                    <Col xs={12}>
+                        <GlobalMenu />
+                    </Col>
                 </Row>
             </Container>
         </header>

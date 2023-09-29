@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "question": "¿Qué métodos de envío están disponibles?",
+        "answer": "Envío nacional y retiro en tienda."
+    },
+    {
+        "id": 2,
+        "question": "¿Cuáles son los tiempos y costos de envío?",
+        "answer": "Envío en la capital dentro de 1 a 2 días hábiles.<br>Envío nacional dentro de 1 a 5 días hábiles.<br>Recogida en tienda disponible inmediatablemente (sujeto a disponibilidad del producto)."
+    },
+    {
+        "id": 3,
+        "question": "¿Qué métodos de pago puedo utilizar?",
+        "answer": "¡Todos!, nuestros pagos son seguros gracias a que utilizamos PayU, pasarela de pagos segura y utilizada mundialmente para transacciones."
+    },
+    {
+        "id": 4,
+        "question": "¿Cuál es su política de cambios, devoluciones y reembolsos?",
+        "answer": "Los artículos devueltos dentro de los 14 días posteriores a su fecha de envío original en las mismas condiciones que nuevos serán elegibles para un reembolso completo o crédito en la tienda. Los reembolsos se cargarán a la forma de pago original utilizada para la compra. El cliente es responsable de los gastos de envío al realizar devoluciones y los gastos de envío/manipulación de la compra original no son reembolsables."
+    }
+]
