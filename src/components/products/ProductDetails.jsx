@@ -16,14 +16,6 @@ export default ({ products }) => {
             .catch((error) => console.log(error));
     }, []);
 
-    function PrintProductsRelation({pr}) {
-        console.log(pr);
-        pr.map((prItem) => {
-            console.log(prItem);
-            return <Product product={prItem} />;
-        });
-    }
-
     return (
         <div className="wrapper-products-details py-5">
             <Container>
@@ -52,7 +44,9 @@ export default ({ products }) => {
                         <div className="productsRelation">
                             <h4>Productos relacionados</h4>
                             <Row>
-                                <PrintProductsRelation pr={productsRelation} />
+                                {productsRelation.map((product) => (
+                                    <Product key={product.id} product={product} />
+                                ))}
                             </Row>
                         </div>
                     </Col>

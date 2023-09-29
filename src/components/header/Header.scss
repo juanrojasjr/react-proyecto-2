@@ -1,3 +1,111 @@
 header {
     background-color: #fff;
+    padding: 10px 0;
+}
+
+.modal-backdrop.show {
+    opacity: 0.3;
+}
+
+#modalLogginRegister {
+    .modal-content {
+        background: transparent;
+        border: 0;
+    }
+}
+
+.modal-btn-close {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin: 0 auto;
+    background: white;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 20px;
+        background: white;
+        display: block;
+        position: absolute;
+        top: -20px;
+        left: 0;
+    }
+    &:hover {
+        transform: translateY(10px);
+    }
+}
+
+.forms {
+    text-align: center;
+    #tabs {
+        justify-content: center;
+        border: 0;
+        .nav-link {
+            padding-bottom: 1rem;
+            transition: all 0.3s ease;
+            transform: translateY(10px);
+            position: relative;
+            z-index: 1;
+            &.active {
+                transform: translateY(0px);
+                font-weight: bold;
+            }
+            &:not(.active) {
+                background-color: black;
+                color: white;
+                border-color: transparent;
+            }
+            &:hover {
+                transform: translateY(0px);
+            }
+        }
+    }
+    #tabsContent {
+        background-color: white;
+        border-radius: 4px;
+        position: relative;
+        z-index: 2;
+        .tab-pane {
+            position: relative;
+            padding: 1.5rem;
+        }
+        #login::after,
+        #register::after {
+            content: "";
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #login.active::after {
+            background: url("./../../assets/images/dog-login.svg") no-repeat;
+            left: -46%;
+        }
+        #register.active::after {
+            background: url("./../../assets/images/cat-register.svg") no-repeat;
+            right: -48%;
+        }
+        input {
+            margin-bottom: 0.8rem;
+            &:focus {
+                box-shadow: 0 4px 20px #00000014;
+                border-color: black;
+            }
+        }
+    }
+}
+
+.invalid-feedback{
+    margin-top: -8px;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1;
 }

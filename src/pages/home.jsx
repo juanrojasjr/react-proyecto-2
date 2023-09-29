@@ -20,7 +20,7 @@ export default () => {
                             <div className="col-12 col-md-4">
                                 <div className="cardHover">
                                     <a href="#" className="cardHover__link">
-                                        {/* <img className="cardHover__image" src="./assets/dog-optimice-freepik.jpg" alt="" /> */}
+                                        <img className="cardHover__image" src="images/dog-optimice-freepik.jpg" alt="" />
                                         <div className="cardHover__content">
                                             <h3>Perros</h3>
                                         </div>
@@ -30,7 +30,7 @@ export default () => {
                             <div className="col-12 col-md-4">
                                 <div className="cardHover">
                                     <a href="#" className="cardHover__link">
-                                        {/* <img className="cardHover__image" src="./assets/cat-optimice-freepik.jpg" alt="" /> */}
+                                        <img className="cardHover__image" src="images/cat-optimice-freepik.jpg" alt="" />
                                         <div className="cardHover__content">
                                             <h3>Gatos</h3>
                                         </div>
@@ -40,7 +40,7 @@ export default () => {
                             <div className="col-12 col-md-4">
                                 <div className="cardHover">
                                     <a href="#" className="cardHover__link">
-                                        {/* <img className="cardHover__image" src="./assets/rabbit-optimice-freepik.jpg" alt="" /> */}
+                                        <img className="cardHover__image" src="images/rabbit-optimice-freepik.jpg" alt="" />
                                         <div className="cardHover__content">
                                             <h3>Otros</h3>
                                         </div>
@@ -50,7 +50,7 @@ export default () => {
                         </div>
                     </div>
                 </section>
-                <section id="blog" className="pt-6">
+                {/* <section id="blog" className="pt-6">
                     <div className="container">
                         <div className="sectionTitle">
                             <h2>Nuestro blog</h2>
@@ -58,7 +58,7 @@ export default () => {
                         </div>
                         <div className="row"></div>
                     </div>
-                </section>
+                </section> */}
                 <section id="faqs" className="py-6">
                     <div className="container">
                         <div className="sectionTitle">
