@@ -1,16 +1,28 @@
 import React from "react";
-// import "../assets/css/Product.css";
+import { Link } from "react-router-dom";
+import Col from "react-bootstrap/Col";
+import Card from "react-bootstrap/Card";
+import "./Product.scss";
 
 export default ({product}) => {
     const { id, title, price, image } = product;
 
     return (
-        <div className="product">
-            {console.log(product)}
-            <img src={image} alt={title} />
-            <h3>{title}</h3>
-            <p>{price}</p>
-            {/* <button onClick={() => addToCart(id)}>Add to cart</button> */}
-        </div>
+        <Col xs={12} md={3} className="product">
+            <Card>
+                <div className="card-image">
+                    <Card.Img variant="top" src={image} alt={title} />
+                </div>
+                <Card.Body>
+                    <div>
+                        <h5 className="card-title">{title}</h5>
+                        <p className="card-text">${price}</p>
+                    </div>
+                    <Link to={`/products/${product.id}`} key={product.id} className="character-card">
+                        Leer más <i className="bi bi-arrow-right"></i>
+                    </Link>
+                </Card.Body>
+            </Card>
+        </Col>
     );
 };

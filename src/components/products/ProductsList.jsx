@@ -1,23 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Product from "./Product";
-// import "../assets/css/ProductsList.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
-export default () => {
-
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch("https://fakestoreapi.com/products")
-            .then((response) => response.json())
-            .then((data) => setProducts(data))
-            .catch((error) => console.log(error));
-    }, []);
-
+export default ({products}) => {
     return (
-        <div className="product-list">
-            {products.map((product) => (
-                <Product key={product.id} product={product} />
-            ))}
-        </div>
+        <>
+            <div className="product-list">
+                <Container>
+                    <Row className="py-4">
+                        {products.map((product) => (
+                            <Product key={product.id} product={product} />
+                        ))}
+                    </Row>
+                </Container>
+            </div>
+        </>
     );
 };

@@ -1,0 +1,53 @@
+@import './../../scss/variables';
+
+.card {
+    // border-radius: 10px;
+    border: 0px;
+    // box-shadow: 0 4px 20px #00000014;
+    padding: 10px;
+    height: 400px;
+    border-radius: 16px;
+	box-shadow: 0 30px 30px -25px rgba(#4133B7, .25);
+    margin-bottom: 40px;
+    &-image {
+        border-radius: 10px;
+        overflow: hidden;
+        img {
+            transition: all 0.4s ease;
+            object-fit: contain;
+            max-height: 300px;
+            scale: 1;
+            width: 100%;
+            transform-origin: center center;
+        }
+    }
+    &-body {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .card-title {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            font-family: $secondary-font;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: black;
+            i {
+                transition: all 0.4s ease;
+                transform: translateX(0px);
+                display: inline-block;
+            }
+        }
+    }
+    &:hover {
+        .card-image img {
+            scale: 1.1;
+        }
+        i {
+            transform: translateX(10px);
+        }
+    }
+}
